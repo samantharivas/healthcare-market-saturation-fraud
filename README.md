@@ -16,5 +16,5 @@ git init
 ```bash
 git clone https://github.com/samantharivas/healthcare-market-saturation-fraud.git
 ```
-2. Navigate to each directory (e.g., `data`, `notebooks) and follow the setup instructions provided in their respective `README.md` files.
+2. Navigate to each directory (e.g., `data`, `notebooks` and follow the setup instructions provided in their respective `README.md` files.
 3. Open and run the Jupyter notebooks in the `Preprocessing.ipynb` and `Modeling.ipynb` to explore the data and perform detailed analysis.
