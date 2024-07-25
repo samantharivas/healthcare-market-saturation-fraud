@@ -1,3 +1,0 @@
-cms_data.csv filter=lfs diff=lfs merge=lfs -text
-cms_data.xlsx filter=lfs diff=lfs merge=lfs -text
-*.csv filter=lfs diff=lfs merge=lfs -text
