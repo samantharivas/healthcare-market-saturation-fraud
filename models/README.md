@@ -18,7 +18,7 @@ To use any of the models, load the corresponding file using the appropriate libr
 
 Example of loading a Pickle model:
 
-```python
+```
 import pickle
 
 with open('models/lasso_best_model.pkl', 'rb') as file:
