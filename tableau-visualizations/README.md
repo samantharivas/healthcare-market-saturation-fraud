@@ -5,7 +5,7 @@ This directory contains Tableau workbooks for visualizing data related to the "H
 ## Files
 
 - **`bagging-classifier-prediction-results.twbx`**: Tableau Workbook file for visualizing the results of the Bagging Classifier model's predictions. This workbook includes charts and dashboards to analyze the performance and predictions of the model.
-- **`beneficiaries.twbx`**: Tableau Workbook file containing visualizations related to Medicare beneficiaries. This workbook includes charts and dashboards that help analyze beneficiary data across different dimensions.
+- **`beneficiary-payments.twbx`**: Tableau Workbook file containing visualizations related to Medicare beneficiary payments. This workbook includes charts and dashboards that analyze fee-for-service metrics, provider counts, user numbers, and total payments across states and counties.
 - **`dual-eligibility.twbx`**: Tableau Workbook file focused on dual-eligible beneficiaries. It visualizes data related to individuals eligible for both Medicare and Medicaid, providing insights into their distribution and characteristics.
 - **`providers-and-beneficiaries.twbx`**: Tableau Workbook file for visualizing data related to both healthcare providers and Medicare beneficiaries. This workbook includes visualizations that display information about the number and distribution of providers alongside beneficiary data.
 
