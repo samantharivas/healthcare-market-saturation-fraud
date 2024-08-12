@@ -2,7 +2,7 @@
 
 This Flask application allows users to interact with a predictive model designed for detecting healthcare fraud based on various features.
 
-**Link to Flask app**: [Healthcare Fraud Detection Flask App](https://bit.ly/ad599_fwa_model)
+**Link to Flask app**: [Healthcare Fraud Detection Flask App](https://bit.ly/medicare-fwa-identification)
 
 ## Table of Contents
 
@@ -82,8 +82,9 @@ This Flask application allows users to interact with a predictive model designed
 
 - **Model Files**
 
-  - `xgb_best_model.pkl`: Serialized XGBoost model used for predictions.
-  - `encoder.pkl`: Serialized encoder for data preprocessing.
+  - `bag_best_model.pkl`: Serialized Bagging Classifier model used for predictions.
+  - `binary_encoder.pkl`: Serialized encoder for data preprocessing.
+  - `pca.pkl`: Serialized PCA (Principal Component Analysis) transformer used for dimensionality reduction.
   - `scaler.pkl`: Serialized scaler for data normalization.
 
 - **Frontend Interface**
@@ -100,9 +101,10 @@ This Flask application allows users to interact with a predictive model designed
 
 - **`fwa_app.py`**: Main script for the Flask application.
 - **`requirements.txt`**: File listing required Python packages.
-- **`encoder.pkl`**: Serialized encoder for data preprocessing.
+- **`binary_encoder.pkl`**: Serialized encoder for data preprocessing.
+- **`pca.pkl`**: Serialized PCA (Principal Component Analysis) transformer used for dimensionality reduction.
 - **`scaler.pkl`**: Serialized scaler for data normalization.
-- **`xgb_best_model.pkl`**: Serialized XGBoost model used for predictions.
+- **`bag_best_model.pkl`**: Serialized Bagging Classifier model used for predictions.
 - **`templates/`**: Directory containing HTML templates.
   - **`index.html`**: Frontend interface for the Flask application.
 
