@@ -4,13 +4,26 @@ This directory contains the pre-trained models used in the "Healthcare Market Sa
 
 ## Files
 
-- **bag_best_model.zip**: A ZIP archive containing the best performing Bagging model.
-- **lasso_best_model.pkl**: The best performing Lasso Regression model, saved in Pickle format.
-- **logreg_best_model.pkl**: The best performing Logistic Regression model, saved in Pickle format.
-- **ridge_best_model.pkl**: The best performing Ridge Regression model, saved in Pickle format.
-- **sgd_best_model.pkl**: The best performing Stochastic Gradient Descent model, saved in Pickle format.
-- **xgb_best_model.pkl**: The best performing XGBoost model, saved in Pickle format.
-
+- **`ada_best_model.joblib`**: The best performing AdaBoost model, saved in Joblib format.
+- **`ada_best_model.pkl`**: The best performing AdaBoost model, saved in Pickle format.
+- **`bag_best_model.joblib`**: The best performing Bagging Classifier model, saved in Joblib format.
+- **`bag_best_model.pkl`**: The best performing Bagging Classifier model, saved in Pickle format.
+- **`lasso_best_model.joblib`**: The best performing Lasso Regression model, saved in Joblib format.
+- **`lasso_best_model.pkl`**: The best performing Lasso Regression model, saved in Pickle format.
+- **`logreg_best_model.joblib`**: The best performing Logistic Regression model, saved in Joblib format.
+- **`logreg_best_model.pkl`**: The best performing Logistic Regression model, saved in Pickle format.
+- **`nn_best_model.joblib`**: The best performing Neural Network model, saved in Joblib format.
+- **`nn_best_model.pkl`**: The best performing Neural Network model, saved in Pickle format.
+- **`qda_best_model.joblib`**: The best performing Quadratic Discriminant Analysis model, saved in Joblib format.
+- **`qda_best_model.pkl`**: The best performing Quadratic Discriminant Analysis model, saved in Pickle format.
+- **`ridge_best_model.joblib`**: The best performing Ridge Regression model, saved in Joblib format.
+- **`ridge_best_model.pkl`**: The best performing Ridge Regression model, saved in Pickle format.
+- **`sgd_best_model.joblib`**: The best performing Stochastic Gradient Descent model, saved in Joblib format.
+- **`sgd_best_model.pkl`**: The best performing Stochastic Gradient Descent model, saved in Pickle format.
+- **`svm_best_model.joblib`**: The best performing Support Vector Machine model, saved in Joblib format.
+- **`svm_best_model.pkl`**: The best performing Support Vector Machine model, saved in Pickle format.
+- **`xgb_best_model.joblib`**: The best performing XGBoost model, saved in Joblib format.
+- **`xgb_best_model.pkl`**: The best performing XGBoost model, saved in Pickle format.
 
 ## Usage
 
@@ -21,6 +34,13 @@ Example of loading a Pickle model:
 ```
 import pickle
 
-with open('models/lasso_best_model.pkl', 'rb') as file:
+with open('models/bag_best_model.pkl', 'rb') as file:
     model = pickle.load(file)
 ```
+
+Example of loading a Joblib model: 
+```
+import joblib
+
+model = joblib.load('models/bag_best_model.joblib')
+``` 
