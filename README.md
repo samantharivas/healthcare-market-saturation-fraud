@@ -88,8 +88,8 @@ For detailed descriptions of each variable, refer to the [data dictionary](https
 
 ### Questions and Hypotheses
 
-- What patterns indicate potential fraud, waste, and abuse in healthcare services?
-- How does market saturation correlate with inefficiencies in healthcare delivery?
+- What patterns indicate potential fraud, waste, and abuse in healthcare (Medicare & Medicaid) services?
+- How does market saturation correlate with inefficiencies in healthcare (Medicare & Medicaid) delivery?
 
 ### Analysis and Modeling
 
