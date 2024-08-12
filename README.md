@@ -2,13 +2,17 @@
 
 This project, part of the ADS-599 course in the Applied Data Science Program at the University of San Diego, aims to uncover inefficiencies in healthcare service delivery using the Market Saturation and Utilization State-County dataset from the Centers for Medicare & Medicaid Services (CMS). By analyzing healthcare provider saturation, the project seeks to identify potential fraud, waste, and abuse (FWA) and offer actionable insights for improving healthcare resource allocation.
 
+## Project Overview
+
+This study investigates fraud, waste, and abuse (FWA) within the Centers for Medicare & Medicaid Services (CMS) data using advanced machine learning techniques. By analyzing the Market Saturation and Utilization State-County dataset, this project aims to identify inefficiencies and potential FWA in healthcare service delivery. The analysis spans data from 2019 to 2023, evaluating ten machine learning models, including logistic regression, Ridge classifier, Lasso classifier, XGBoost, and neural networks, among others. The Bagging classifier emerged as the most effective model, providing critical insights into healthcare resource allocation and flagging potential FWA cases for further investigation.
+
 ## Contributors
 
 - [Jessica Hin](https://github.com/JessicaH123) (@JessicaH123)
 - [Amy Ou](https://github.com/amyou518) (@amyou518)
 - [Samantha Rivas](https://github.com/samantharivas) (@samantharivas)
 
-# Table of Contents
+## Table of Contents
 
 1. [Project Overview](#project-overview)
 2. [Contributors](#contributors)
@@ -59,11 +63,27 @@ To replicate this analysis on your local machine, follow these steps:
 
 - **Inferential Statistics**
 - **Data Mining**
-- **Predictive Modeling**
-- **Machine Learning**
+- **Supervised Machine Learning**:
+  - Logistic Regression (Baseline Model)
+  - Ridge Classifier
+  - Lasso Classifier
+  - XGBoost
+  - Neural Networks
+  - Quadratic Discriminant Analysis
+  - Bagging Classifier
+  - Stochastic Gradient Descent Classifier
+  - AdaBoost
+  - Support Vector Machines
 - **Data Visualization**
 - **Data Engineering**
-- **Data Manipulation**
+- **Hyperparameter Tuning**
+- **Model Evaluation Metrics**:
+  - Accuracy
+  - F1-score
+  - Confusion Matrix
+  - MCC
+  - PR-AUC
+  - ROC-AUC
 
 ## Technologies
 
@@ -74,6 +94,14 @@ To replicate this analysis on your local machine, follow these steps:
 - **Flask** (for deploying models and creating a GUI)
 
 ## Project Description
+
+This project aims to uncover inefficiencies in healthcare service delivery by analyzing the CMS Market Saturation and Utilization State-County dataset. The primary objectives are:
+
+1. **Data Analysis and Market Saturation Evaluation**: Assess healthcare provider density relative to the beneficiary population to detect patterns of over- and under-utilization.
+2. **Fraud Detection through Machine Learning**: Employ supervised machine learning techniques to identify abnormal patterns indicative of FWA within the dataset.
+3. **Performance Evaluation of Models**: Evaluate the performance of various supervised machine learning models using metrics such as accuracy, F1-score, and confusion matrix.
+4. **Policy Recommendations and Decision Support**: Develop actionable insights to optimize resource allocation, improve healthcare services, and mitigate FWA.
+5. **Interactive Visualization Tool**: Create visualizations using Tableau to support dynamic data exploration and stakeholder decision-making.
 
 ### Dataset
 
@@ -100,10 +128,11 @@ For detailed descriptions of each variable, refer to the [data dictionary](https
 
 ### Challenges
 
-- Efficiently handling large datasets.
-- Ensuring data quality and consistency.
-- Selecting and tuning appropriate models.
-
+- **Handling and preprocessing large datasets for model training.**
+- **Ensuring data quality and consistency across multiple years.**
+- **Selecting and tuning appropriate machine learning models to maximize performance.**
+- **Balancing model complexity with interpretability for practical application in healthcare settings.**
+  
 ## Repository Contents
 
 ### `/flask-application/`
@@ -181,3 +210,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgments
 
 We would like to thank our professor and mentors for their guidance throughout this project. Special thanks to the University of San Diego for providing the resources and support necessary to complete this project.
+
+Acknowledgment to the Centers for Medicare & Medicaid Services (CMS) for providing the dataset used in this study.
+
