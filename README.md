@@ -106,42 +106,72 @@ For detailed descriptions of each variable, refer to the [data dictionary](https
 
 ## Repository Contents
 
-### `/Flask_app_files/`
+### `/flask-application/`
 
 Files related to the Flask application used for model deployment and GUI:
 
 - **`fwa_app.py`**: Main script for the Flask application.
-- **`encoder.pkl`**: Serialized encoder for data preprocessing.
+- **`binary_encoder.pkl`**: Serialized encoder for data preprocessing.
 - **`scaler.pkl`**: Serialized scaler for data normalization.
-- **`xgb_best_model.pkl`**: Serialized best XGBoost model.
+- **`pca.pkl`**: PCA model for dimensionality reduction.
+- **`bag_best_model.pkl`**: Serialized best Bagging model.
+- - **`/templates/`**: HTML templates for Flask application.
+  - **`index.html`**: Main HTML template for the Flask application.
+- **`README.md`**
+
+
 
 ### `/data/`
 
 Datasets and processed data used for modeling:
 
 - **`cms_data.csv`**: Raw data file from CMS.
+- **`cms_data_sql.csv`**: CMS data prepared for SQL database.
+- **`df_fwa.csv`**: Dataset with predictor variable.
+- **`final_bagging_results.csv`**: Final results from Bagging classifier.
+- **`bagging_predictions_fwa.csv`**: Predictions from the Bagging classifier.
 - **`X_train.csv`**, **`X_test.csv`**, **`X_val.csv`**: Prepared feature datasets.
 - **`y_train.csv`**, **`y_test.csv`**, **`y_val.csv`**: Target variables.
 - **`x_train_scaled.csv`**, **`x_test_scaled.csv`**, **`x_val_scaled.csv`**: Scaled feature data.
 - **`x_train_pca.csv`**, **`x_test_pca.csv`**, **`x_val_pca.csv`**: PCA-transformed feature data.
 
+
 ### `/models/`
 
 Trained machine learning models:
 
-- **`xgb_best_model.pkl`**: Best XGBoost model.
-- **`logreg_best_model.pkl`**: Best Logistic Regression model.
-- **`lasso_best_model.pkl`**: Best Lasso model.
-- **`ridge_best_model.pkl`**: Best Ridge model.
-- **`sgd_best_model.pkl`**: Best Stochastic Gradient Descent model.
+- **`xgb_best_model.pkl`**, **`xgb_best_model.joblib`**: Best XGBoost model.
+- **`logreg_best_model.pkl`**, **`logreg_best_model.joblib`**: Best Logistic Regression model.
+- **`lasso_best_model.pkl`**, **`lasso_best_model.joblib`**: Best Lasso model.
+- **`ridge_best_model.pkl`**, **`ridge_best_model.joblib`**: Best Ridge model.
+- **`sgd_best_model.pkl`**, **`sgd_best_model.joblib`**: Best Stochastic Gradient Descent model.
+- **`svm_best_model.pkl`**, **`svm_best_model.joblib`**: Best Support Vector Machine model.
+- **`ada_best_model.pkl`**, **`ada_best_model.joblib`**: Best AdaBoost model.
+- **`bag_best_model.pkl`**, **`bag_best_model.joblib`**: Best Bagging model.
+- **`nn_best_model.pkl`**, **`nn_best_model.joblib`**: Best Neural Network model.
+- **`qda_best_model.pkl`**, **`qda_best_model.joblib`**: Best Quadratic Discriminant Analysis model.
+- **`README.md`**
 
 ### `/tableau-visualizations/`
 
 Tableau visualization files:
 
 - **`beneficiaries.twbx`**: Workbook for visualizing beneficiary data.
+- **`providers-and-beneficiaries.twbx`**: Workbook for visualizing providers and beneficiaries data.
 - **`dual-eligibility.twbx`**: Workbook for visualizing dual eligibility data.
-- **`providers.twbx`**: Workbook for visualizing provider data.
+- **`bagging-classifier-prediction-results.twbx`**: Workbook for visualizing Bagging classifier prediction results.
+- **`README.md`**
+
+## /coding-notebooks/
+
+Jupyter notebooks for data analysis and model development:
+
+- **`data-retrieval.ipynb`**: Notebook for retrieving data from CMS API.
+- **`preprocessing.ipynb`**: Notebook for data preprocessing.
+- **`modeling.ipynb`**: Notebook for machine learning model development.
+- **`bagging-classifier-full-run-through.ipynb`**: Notebook for running the full Bagging classifier process.
+- **`sql-database-visualizations.ipynb`**: Notebook for visualizing data from the SQL database.
+- **`README.md`**
 
 
 ## License
