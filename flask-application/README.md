@@ -2,7 +2,7 @@
 
 This Flask application allows users to interact with a predictive model designed for detecting healthcare fraud based on various features.
 
-**Link to Flask app**: [Healthcare Fraud Detection Flask App](https://bit.ly/medicare-fwa-identification)
+**Link to Flask app**: [Healthcare Fraud Detection Flask App](https://bit.ly/fwa_flask_app)
 
 ## Table of Contents
 
